@@ -84,20 +84,21 @@ footer {
 
 
 /* for drawing a diagram */
-
-.text {
-    transform-origin: center center;
-    position: absolute;
-
-}
-
-.rectangle {
+.diagram {
     background-color: #535bf2;
     font-size: x-small;
+    margin: 3rem;
 }
 
-.widthText {}
+.diagramText {
+    transform-origin: center center;
+    position: absolute;
+}
+
+.widthText {
+    transform: translateX(1rem) translateY(-1.5rem);
+}
 
 .heightText {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(-2.5rem) translateY(-3rem);
 }
