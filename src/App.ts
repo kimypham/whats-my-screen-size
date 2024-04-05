@@ -1,7 +1,7 @@
 import './App.style.css'
 import { displayScreenSize } from './App.service.ts'
 
-document.querySelector<Element>('body')!.innerHTML = `
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="infoBox">
             <h1>What's my screen size?</h1>
             <div class="box">

@@ -1,20 +1,26 @@
 {
-  "name": "whats-my-screen-size",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@vitest/coverage-v8": "^1.4.0",
-    "happy-dom": "^14.3.9",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vitest": "^1.4.0"
-  }
+    "name": "whats-my-screen-size",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "homepage": "https://kimypham.github.io/whats-my-screen-size/",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "predeploy": "yarn run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@vitest/coverage-v8": "^1.4.0",
+        "happy-dom": "^14.3.9",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0",
+        "vitest": "^1.4.0"
+    },
+    "dependencies": {
+        "gh-pages": "^6.1.1"
+    }
 }
